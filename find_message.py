@@ -15,7 +15,7 @@ url_txt = "接口地址"
 """企业宝"""
 timedoc = time.time()
 timedoc1000 = str((int(round(timedoc * 1000))))
-passwdtime = (passwd_txt + timedoc1000)
+passwdtime = (user_txt + passwd_txt + timedoc1000)
 passtime = passwdtime.encode("utf-8")
 passmd5 = hashlib.md5()
 passmd5.update(passtime)
